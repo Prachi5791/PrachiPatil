@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <header>
+      <nav class="nav-bar">
+        <div class="logo" id="logo-btn" style="cursor: pointer">
+          <img src="../assets/logo.png" alt="" class="logo-img" />
+          <button class="info-toggle-btn" aria-label="Open Info">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="titles">
+          <ul>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/frontend/about/" class="nav-link">About Me</a></li>
+            <li><a href="/frontend/project/" class="nav-link">Projects</a></li>
+            <li><a href="/frontend/studies/" class="nav-link">Skills</a></li>
+            <li><a href="/frontend/hackathon/" class="nav-link">Hackathon</a></li>
+            <li><a href="/frontend/contact/" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <!-- <div class="info">
+          <button class="action-btn"><i class="fa-solid fa-bell"></i></button>
+          <button class="action-btn"><i class="fa-solid fa-user"></i></button>
+        </div> -->
+      </nav>
+    </header>
+
+    <div id="info-popup" class="info-popup hidden">
+      <div class="info-popup-content">
+        <button id="close-popup" aria-label="Close Info Popup">&times;</button>
+        <ul>
+          <li><a href="/frontend/">Home</a></li>
+          <li><a href="/frontend/about/">About Me</a></li>
+          <li><a href="/frontend/project/">Projects</a></li>
+          <li><a href="/frontend/studies/">Skills</a></li>
+          <li><a href="/frontend/hackathon/">Hackathon</a></li>
+          <li><a href="/frontend//contact/">Contact</a></li>
+        </ul>
+        <!-- <button class="action-btn">
+          <i class="fa-solid fa-bell"></i> Notifications
+        </button>
+        <button class="action-btn">
+          <i class="fa-solid fa-user"></i> Profile
+        </button> -->
+      </div>
+    </div>
+
+      <section class="studies section" id="studies" style="background-color: #00103c;">
+        <div class="flex-box">
+          <h1 class="section-title-01">Education</h1>
+          <h2 class="section-title-02">Studies</h2>
+          <!-- Education content -->
+          <div class="study_container">
+                <div class="skill">
+                    <p>Hover to see the percentage</p>
+                    <div class="skills-container">
+                      <div class="bubble bubble_js" >
+                        <img src="https://img.icons8.com/?size=100&id=106036&format=png&color=ffffff" alt="HTML & CSS">
+                        <span class="bubble-label">Javascript<br>85%</span>
+                      </div>
+
+                      <div class="bubble bubble_html" >
+                        <img src="https://img.icons8.com/?size=100&id=23028&format=png&color=ffffff" alt="CSS">
+                        <span class="bubble-label">HTML<br>95%</span>
+                      </div>
+
+                      <div class="bubble bubble_python" >
+                        <img src="https://img.icons8.com/?size=100&id=12592&format=png&color=ffffff" alt="JavaScript">
+                        <span class="bubble-label">Python<br>75%</span>
+                      </div>
+
+                      <div class="bubble bubble_node" >
+                        <img src="https://img.icons8.com/?size=100&id=FQlr_bFSqEdG&format=png&color=ffffff" alt="Node.js">
+                        <span class="bubble-label">Node.js<br>75%</span>
+                      </div>
+
+                      <div class="bubble bubble_react" >
+                        <img src="https://img.icons8.com/?size=100&id=0Da6k7SMq0hs&format=png&color=ffffff" alt="React">
+                        <span class="bubble-label">React<br>70%</span>
+                      </div>
+
+                      <div class="bubble bubble_figma" >
+                        <img src="https://img.icons8.com/?size=100&id=amXjtNWVYSKP&format=png&color=ffffff" alt="Figma">
+                        <span class="bubble-label">Figma<br>80%</span>
+                      </div>
+
+                      <div class="bubble bubble_css" >
+                        <img src="https://img.icons8.com/?size=100&id=38272&format=png&color=ffffff" alt="Python">
+                        <span class="bubble-label">CSS<br>93%</span>
+                      </div>
+
+                      <div class="bubble bubble_java" >
+                        <img src="https://img.icons8.com/?size=100&id=2572&format=png&color=ffffff" alt="Java">
+                        <span class="bubble-label">Java<br>60%</span>
+                      </div>
+
+                      <div class="bubble bubble_dsa" >
+                        <img src="https://img.icons8.com/?size=100&id=PZknXs9seWCp&format=png&color=ffffff" alt="Java">
+                        <span class="bubble-label">DSa<br>90%</span>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <div class="timeline">
+                        <div class="time_1">
+                            <div class="logos"><i class="fa-solid fa-circle-dot"></i></div>
+                            <div class="info">
+                                <div class="college"><h3 class="college_name">VIT, Wadala</h3> <span>2023- present</span></div>
+                                <div class="edu_info">
+                                    <p>computer Engineering</p>
+                                    <p>SGPI: 9.87</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="time_1">
+                            <div class="logos"><i class="fa-solid fa-circle-dot"></i></div>
+                            <div class="info">
+                                <div class="college"><h3 class="college_name">AECS- 04, BARC</h3> <span>2021- 2023</span></div>
+                                <div class="edu_info">
+                                    <p>PCMB</p>
+                                    <p>93.2%</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="time_1">
+                            <div class="logos"><i class="fa-solid fa-circle-dot"></i></div>
+                            <div class="info">
+                                <div class="college"><h3 class="college_name">AECS- 05, BARC</h3> <span>2019 - 2021</span></div>
+                                <div class="edu_info">
+                                    <p>Matriculation</p>
+                                    <p>94.6%</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+  </body>
+<script
+      src="https://kit.fontawesome.com/9534a6881b.js"
+      crossorigin="anonymous"
+    ></script>
+  <script src="../../backend/study.js"></script>
+</html>

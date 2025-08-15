@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="hackathon_body">
+    <header>
+      <nav class="nav-bar">
+        <div class="logo" id="logo-btn" style="cursor: pointer">
+          <img src="../assets/logo.png" alt="" class="logo-img" />
+          <button class="info-toggle-btn" aria-label="Open Info">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="titles">
+          <ul>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/frontend/about/" class="nav-link">About Me</a></li>
+            <li><a href="/frontend/project/" class="nav-link">Projects</a></li>
+            <li><a href="/frontend/studies/" class="nav-link">Skills</a></li>
+            <li>
+              <a href="/frontend/hackathon/" class="nav-link">Hackathon</a>
+            </li>
+            <li><a href="/frontend/contact/" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <!-- <div class="info">
+          <button class="action-btn"><i class="fa-solid fa-bell"></i></button>
+          <button class="action-btn"><i class="fa-solid fa-user"></i></button>
+        </div> -->
+      </nav>
+    </header>
+
+    <div id="info-popup" class="info-popup hidden">
+      <div class="info-popup-content">
+        <button id="close-popup" aria-label="Close Info Popup">&times;</button>
+        <ul>
+          <li><a href="/frontend/">Home</a></li>
+          <li><a href="/frontend/about/">About Me</a></li>
+          <li><a href="/frontend/project/">Projects</a></li>
+          <li><a href="/frontend/studies/">Skills</a></li>
+          <li><a href="/frontend/hackathon/">Hackathon</a></li>
+          <li><a href="/frontend//contact/">Contact</a></li>
+        </ul>
+        <!-- <button class="action-btn">
+          <i class="fa-solid fa-bell"></i> Notifications
+        </button>
+        <button class="action-btn">
+          <i class="fa-solid fa-user"></i> Profile
+        </button> -->
+      </div>
+    </div>
+    <section class="hac_cert section" id="hackathon">
+      <div class="container flex-box">
+        <h1 class="section-title-01">Certifications</h1>
+        <h2 class="section-title-02">Hackathon & Courses</h2>
+
+        <div class="hac_cert_container">
+          <div class="hackathon">
+            <div class="hac_wrapper">
+              <div class="hac_container">
+                <!-- JS will insert all .hac_card elements here -->
+              </div>
+            </div>
+            <div class="view_more_btn">
+              <button>View More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="infoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/9534a6881b.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../backend/hackathon.js"></script>
+</html>

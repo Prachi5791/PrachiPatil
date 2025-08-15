@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo" id="logo-btn" style="cursor: pointer">
+          <img src="../assets/logo.png" alt="" class="logo-img" />
+          <button class="info-toggle-btn" aria-label="Open Info">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div class="titles">
+          <ul>
+            <li><a href="/" class="nav-link">Home</a></li>
+            <li><a href="/frontend/about/" class="nav-link">About Me</a></li>
+            <li><a href="/frontend/project/" class="nav-link">Projects</a></li>
+            <li><a href="/frontend/studies/" class="nav-link">Skills</a></li>
+            <li>
+              <a href="/frontend/hackathon/" class="nav-link">Hackathon</a>
+            </li>
+            <li><a href="/frontend/contact/" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+        <!-- <div class="info">
+          <button class="action-btn"><i class="fa-solid fa-bell"></i></button>
+          <button class="action-btn"><i class="fa-solid fa-user"></i></button>
+        </div> -->
+      </nav>
+    </header>
+
+    <div id="info-popup" class="info-popup hidden">
+      <div class="info-popup-content">
+        <button id="close-popup" aria-label="Close Info Popup">&times;</button>
+        <ul>
+          <li><a href="/frontend/">Home</a></li>
+          <li><a href="/frontend/about/">About Me</a></li>
+          <li><a href="/frontend/project/">Projects</a></li>
+          <li><a href="/frontend/studies/">Skills</a></li>
+          <li><a href="/frontend/hackathon/">Hackathon</a></li>
+          <li><a href="/frontend//contact/">Contact</a></li>
+        </ul>
+        <!-- <button class="action-btn">
+          <i class="fa-solid fa-bell"></i> Notifications
+        </button>
+        <button class="action-btn">
+          <i class="fa-solid fa-user"></i> Profile
+        </button> -->
+      </div>
+    </div>
+
+    <section class="about-us section" id="about-us">
+      <div class="flex-box">
+        <div class="head">
+          <h1 class="section-title-01">Know Me More</h1>
+          <h2 class="section-title-02">About Me</h2>
+        </div>
+
+        <div class="combined-box">
+          <div class="photo">
+            <img
+              src="../assets/about_img.jpeg"
+              alt="Prachi Maruti Patil - Portfolio Photo"
+            />
+          </div>
+          <div class="description">
+            <div class="paragraph">
+              <p>
+                Passionate web developer and designer with expertise in creating
+                beautiful, functional digital experiences. I blend creativity
+                with technical skills to bring ideas to life.
+              </p>
+            </div>
+            <div class="buttons">
+              <div class="download">
+                <button id="download-resume" type="button">
+                  Download Resume
+                </button>
+                <button id="download-cv" type="button">Download CV</button>
+              </div>
+              <div class="box">
+                <button id="view-portfolio-btn" type="button">
+                  View my Portfolio
+                  <i class="fa-solid fa-circle-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio-modal" class="modal hidden">
+        <div class="modal-content">
+          <span id="modal-close" class="modal-close">&times;</span>
+
+          <!-- <iframe
+            src="../assets/Portfolio_Prachi.pdf"
+            style="width: 100%; height: 80vh"
+            frameborder="0"
+          ></iframe> -->
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/9534a6881b.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="../../backend/about.js"></script>
+</html>
