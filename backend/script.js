@@ -49,8 +49,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // ---- Background Image Slideshow for .home ----
   const images_dark = [
-    "/frontend/assets/bg1_dark.png",
-    "/frontend/assets/bg12_dark.png",
+    "frontend/assets/bg1_dark.png",
+    "frontend/assets/bg12_dark.png",
   ];
   let images = images_dark;
   let index = 0;
