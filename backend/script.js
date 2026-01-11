@@ -48,30 +48,32 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   // ---- Background Image Slideshow for .home ----
-  const images_dark = [
-    "frontend/assets/bg1_dark.png",
-    "frontend/assets/bg12_dark.png",
-  ];
-  let images = images_dark;
-  let index = 0;
-  const home = document.querySelector(".home");
+  // const images_dark = [
+  //   "frontend/assets/bg11.png",
+  //   "frontend/assets/bg22.png",
+  //   "frontend/assets/bg33.png",
+  //   "frontend/assets/bg44.png",
+  // ];
+  // let images = images_dark;
+  // let index = 0;
+  // const home = document.querySelector(".home");
 
   // Preload images
-  images.forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
+  // images.forEach((src) => {
+  //   const img = new Image();
+  //   img.src = src;
+  // });
 
-  // Set initial background image if .home element exists
-  if (home) {
-    home.style.backgroundImage = `url('${images[0]}')`;
-  }
+  // // Set initial background image if .home element exists
+  // if (home) {
+  //   home.style.backgroundImage = `url('${images[0]}')`;
+  // }
 
   // Change background image every 3 seconds
-  setInterval(() => {
-    index = (index + 1) % images.length;
-    if (home) {
-      home.style.backgroundImage = `url('${images[index]}')`;
-    }
-  }, 3000);
+  // setInterval(() => {
+  //   index = (index + 1) % images.length;
+  //   if (home) {
+  //     home.style.backgroundImage = `url('${images[index]}')`;
+  //   }
+  // }, 3000);
 });
