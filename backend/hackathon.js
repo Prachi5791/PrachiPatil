@@ -47,13 +47,14 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  const BASE_PATH = "/PrachiPatil";
   // ----- Your hackData -----
   const hackData = [
     {
       id: "hackathon1",
       title: "International Women’s Hackathon",
       subtitle: "RAIT, Nerul · Team Leader",
-      image: "frontend/assets/13.png",
+      image: `${BASE_PATH}/frontend/assets/13.png`,
       shortDescription:
         "Led a cross-functional team in a two-phase international hackathon, building an interactive multi-language learning platform and a women’s safety application with real-time SOS detection.",
       fullBlog: `
@@ -89,7 +90,7 @@ window.addEventListener("DOMContentLoaded", () => {
       id: "hackathon2",
       title: "Hackathon at Walchand College",
       subtitle: "Walchand College · Team Player",
-      image: "frontend/assets/14.png",
+      image: `${BASE_PATH}/frontend/assets/14.png`,
       shortDescription:
         "Collaborated in a unique no-voice-track hackathon, enhancing an interactive vocabulary platform through silent coordination and teamwork.",
       fullBlog: `
@@ -119,7 +120,7 @@ window.addEventListener("DOMContentLoaded", () => {
       id: "hackathon3",
       title: "36-Hour Hackathon",
       subtitle: "Pillai College, Rasayani · Team Member",
-      image: "frontend/assets/10.png",
+      image: `${BASE_PATH}/frontend/assets/10.png`,
       shortDescription:
         "Built a personalized travel recommendation app by combining social media trends, weather data, and local guide insights in an intense 36-hour hackathon.",
       fullBlog: `
@@ -149,7 +150,7 @@ window.addEventListener("DOMContentLoaded", () => {
       id: "course1",
       title: "AI Using Python Training",
       subtitle: "L&T Skill Trainers Academy · Participant",
-      image: "frontend/assets/12.png",
+      image: `${BASE_PATH}/frontend/assets/12.png`,
       shortDescription:
         "Completed an intensive one-week AI training program covering Python, data visualization, regression, classification, and professional communication skills.",
       fullBlog: `
@@ -178,7 +179,7 @@ window.addEventListener("DOMContentLoaded", () => {
       id: "expo1",
       title: "Automation Expo 2025 – Industry 4.0 Exposure",
       subtitle: "Mumbai · educational Visit",
-      image: "frontend/assets/11.png",
+      image: `${BASE_PATH}/frontend/assets/11.png`,
       shortDescription:
         "Gained hands-on exposure to Industry 4.0 technologies at Automation Expo 2025, exploring real-world applications of robotics, AI, IoT, 3D scanning, and enterprise ERP systems.",
       fullBlog: `
