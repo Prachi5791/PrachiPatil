@@ -176,6 +176,30 @@ const projectsData = {
   AIML: [
     {
       tag: "00",
+      title: "VigilAI - Smart Surveillance Event Detection System",
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express",
+        "Python",
+        "Flask",
+        "YOLOv8",
+        "MongoDB",
+        "Docker",
+      ],
+      codeLink: "https://github.com/Prachi5791/VigilAI",
+      // liveLink: "https://vigil-ai-five.vercel.app",
+      features: [
+        "YOLOv8-powered real-time object detection with 6 rule-based event triggers (loitering, crowd formation, abandoned objects, and more)",
+        "On-demand video clip generation for flagged surveillance events",
+        "ADBMS analytics dashboard showcasing indexing, caching, replication, and parallel processing benchmarks",
+        "Full Docker Compose setup with shared volumes across React, Node.js, Flask, and MongoDB services",
+      ],
+      description:
+        "VigilAI is a production-ready, multi-service AI surveillance platform that detects and analyzes security events in video footage. The Python engine runs YOLOv8 object detection with a custom rule engine to flag events like loitering and crowd formation, while the Node.js backend handles bulk upserts, clip generation, and an ADBMS dashboard demonstrating real database performance concepts — indexing, caching, replication, and concurrency — all orchestrated via Docker.",
+    },
+    {
+      tag: "01",
       title: "UPI Transaction Data Visualization",
       tech: [
         "Python",
@@ -196,7 +220,7 @@ const projectsData = {
         "This project is a comprehensive Jupyter Notebook that explores and visualizes UPI (Unified Payments Interface) transaction data. It uncovers insights related to transaction types, user behavior segmented by age group and device type, merchant categories, transaction success or failure, fraud patterns, and hourly and weekly trends. The visualizations help in understanding transaction distribution, fraud detection, and network performance.",
     },
     {
-      tag: "01",
+      tag: "02",
       title: "Gemini AI Clone",
       tech: ["HTML5", "CSS3", "JavaScript", "Gemini API"],
       codeLink: "https://github.com/Prachi5791/clne-gemini-site",
@@ -213,6 +237,52 @@ const projectsData = {
   FullStack: [
     {
       tag: "00",
+      title: "E-Verifier - Blockchain Document Verification",
+      tech: [
+        "React.js",
+        "Node.js",
+        "Express",
+        "Solidity",
+        "Hardhat",
+        "Ethers.js",
+        "MongoDB",
+        "IPFS",
+      ],
+      codeLink: "https://github.com/Prachi5791/DocVerfy",
+      features: [
+        "Tamper-proof document storage using IPFS and blockchain smart contracts",
+        "Role-based access control for Uploaders, Verifiers, and Admins",
+        "QR code generation and scanning for easy document verification",
+        "Automated email notifications for verification requests and status updates",
+      ],
+      description:
+        "DocVerfy is a full-stack blockchain-based document verification platform that ensures document authenticity and immutability. Built with React on the frontend and Node.js on the backend, it leverages Ethereum smart contracts (Solidity + Hardhat) and IPFS decentralized storage to create a transparent, secure verification workflow — from document upload and QR code generation to verifier approval recorded on-chain.",
+    },
+    {
+      tag: "01",
+      title: "CCL Inventory Management System",
+      tech: [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "Microsoft Azure",
+        "GitHub Actions",
+      ],
+      codeLink: "https://github.com/Prachi5791/CCL_inventory",
+      link: "https://mango-rock-085887a00.1.azurestaticapps.net/login",
+      features: [
+        "Real-time stock level tracking updated on every transaction",
+        "Full CRUD RESTful API with structured endpoints for inventory and transactions",
+        "Azure Static Web Apps deployment with automated CI/CD via GitHub Actions",
+        "Live API performance monitoring through Azure Metrics dashboard",
+      ],
+      description:
+        "CCL Inventory is a full-stack inventory management platform built on the MERN stack that replaces manual stock tracking with a real-time, web-based dashboard. Teams can manage inventory, log transactions, and monitor system performance from one place. Deployed on Microsoft Azure with JWT-based role access and an automated GitHub Actions pipeline, it's built for reliability and scale.",
+    },
+    {
+      tag: "02",
       title: "Vocabulary Learning App",
       tech: ["React.js", "Node.js", "Express", "MongoDB", "REST API"],
       codeLink: "https://github.com/Prachi5791/Vocabify",
@@ -226,7 +296,7 @@ const projectsData = {
         "A Vocabulary Learning App designed to make language acquisition seamless and engaging through a multilingual learning approach, offering tools to build and enhance vocabulary across various languages. The full stack implementation allows dynamic content, secure authentication, and personalized progression, making it an ideal platform for learners at any level.",
     },
     {
-      tag: "01",
+      tag: "03",
       title: "Real-Time Chat Application",
       tech: ["React.js", "Node.js", "Express", "Socket.io"],
       codeLink: "https://github.com/Prachi5791/Chat_App",
@@ -322,7 +392,7 @@ function getProjectHTML(project) {
                 <i class="fa-solid fa-circle-chevron-right"></i>
                 <span>${f}</span>
               </div>
-              `
+              `,
             )
             .join("")}
         </div>
@@ -383,7 +453,7 @@ function renderProjectTags(category, selectedTag) {
           selectedTag === proj.tag ? "selected-tag" : ""
         }" data-tag="${
           proj.tag
-        }" style="cursor:pointer; transition:all 0.2s;">${proj.tag}</div>`
+        }" style="cursor:pointer; transition:all 0.2s;">${proj.tag}</div>`,
     )
     .join("");
   updateButtons();
@@ -406,7 +476,7 @@ function showProject(category, tag) {
 function getCurrentTags() {
   if (!container) return [];
   return Array.from(container.querySelectorAll(".project_small_tag")).map(
-    (tagDiv) => tagDiv.getAttribute("data-tag")
+    (tagDiv) => tagDiv.getAttribute("data-tag"),
   );
 }
 
@@ -418,7 +488,7 @@ function setActiveTag(tag) {
   showProject(activeCategory, activeProjectTag);
 
   const activeTagDiv = container.querySelector(
-    `.project_small_tag[data-tag="${tag}"]`
+    `.project_small_tag[data-tag="${tag}"]`,
   );
   if (activeTagDiv) {
     const containerRect = container.getBoundingClientRect();
