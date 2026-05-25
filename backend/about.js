@@ -77,7 +77,7 @@ window.addEventListener("DOMContentLoaded", () => {
   };
 
   downloadResumeBtn?.addEventListener("click", () => {
-    downloadFile("/frontend/assets/Prachi_Maruti_Patil_Resume.pdf");
+    downloadFile("/PrachiPatil/frontend/assets/Prachi_Maruti_Patil_Resume.pdf");
   });
 
   downloadCvBtn?.addEventListener("click", () => {
