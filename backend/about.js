@@ -75,9 +75,9 @@ window.addEventListener("DOMContentLoaded", () => {
     a.click();
     document.body.removeChild(a);
   };
-
+  const BASE_PATH = "/PrachiPatil";
   downloadResumeBtn?.addEventListener("click", () => {
-    downloadFile("assets/Prachi_Maruti_Patil_Resume.pdf");
+    downloadFile(`${BASE_PATH}/frontend/assets/Prachi_Maruti_Patil_Resume.pdf`); 
   });
 
   downloadCvBtn?.addEventListener("click", () => {
